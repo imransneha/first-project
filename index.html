@@ -4,64 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>layout</title>
+    <title>form</title>
   </head>
   <body>
-    <table width="1200px" border="1" cellspacing="0">
-      <!-- top header start -->
-      <tr>
-        <td height="40px" colspan="2"></td>
+    <form action="#">
+      <table width="80%" align="center" border="0">
+        <tr>
+          <td width="20%" height="40px" align="center">
+            <label for="fname">First Name</label>
+          </td>
+          <td><input type="text" name="fname" id="fname" /></td>
+          <td><label for="lname">Last Name</label></td>
+          <td><input type="text" name="lname" id="lname" /></td>
+        </tr>
+        <tr>
+          <td align="center"><label for="phone">Phone</label></td>
+          <td><input type="tel" name="phone" id="phone" /></td>
+          <td><label for="dob">Date of birth</label></td>
+          <td><input type="date" name="date" id="dob" /></td>
+        </tr>
+        <tr>
+          <td><h3>QUALIFICATION</h3></td>
+          <td>
+            <input type="checkbox" name="qualification" id="quali" /><label
+              for="quali"
+              >HS</label
+            >
+            <input type="checkbox" name="qualification" id="ba" /><label
+              for="ba"
+              >BA</label
+            >
+            <input type="checkbox" name="qualification" id="ma" /><label
+              for="ma"
+              >MA
+            </label>
+          </td>
+          <td><h3>Select Gender</h3></td>
+          <td>
+            <input type="radio" name="gender" id="male" /><label for="male"
+              >Male</label
+            >
+            <input type="radio" name="gender" id="female" /><label for="female"
+              >Female</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><label for="course">Web Design</label></td>
+          <td>
+            <select name="course" id="course">
+              <option value="">select your course</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JS</option>
+            </select>
+          </td>
 
-        <td colspan="2"></td>
-      </tr>
-      <!-- top header end -->
-      <!-- main header start -->
-      <tr>
-        <td height="100px"></td>
-        <td colspan="3"></td>
-      </tr>
-      <!-- main header end -->
-      <!-- navbar start  -->
-      <tr>
-        <td height="40px" colspan="4">
-          <table width="1200px" border="1" cellspacing="0" height="100%">
-            <tr>
-              <td width="20%" height="100%"></td>
-              <td width="20%"></td>
-              <td width="20%"></td>
-              <td width="20%"></td>
-              <td width="20%"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- navbar end  -->
-      <!-- main menu start -->
-      <tr>
-        <td height="200px"></td>
-        <td colspan="2" rowspan="2"></td>
-
-        <td></td>
-      </tr>
-      <tr>
-        <td height="200px"></td>
-
-        <td></td>
-      </tr>
-      <!-- main menu end -->
-      <!-- big footer start  -->
-      <tr>
-        <td width="25%" height="120px"></td>
-        <td width="25%"></td>
-        <td width="25%"></td>
-        <td width="25%"></td>
-      </tr>
-      <!-- big footer end -->
-      <!-- footer start -->
-      <tr>
-        <td height="50px" colspan="4"></td>
-      </tr>
-      <!-- footer end -->
-    </table>
+          <td><label for="address">WRITE YOUR FULL ADDRESS 👍</label></td>
+          <td>
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center">
+            <input type="submit" value="Log In" />
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
